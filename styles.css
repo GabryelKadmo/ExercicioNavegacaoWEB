@@ -32,7 +32,7 @@
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 1rem;
     align-items: center;
     text-align: center;
@@ -235,6 +235,13 @@ section h1 {
 a {
     color: #fff;
     margin-left: 5px;
+}
+
+.logo a{
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+    margin-right: 20px;
 }
 
 i {
