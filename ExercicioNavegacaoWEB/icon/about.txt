@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Abyssinica SIL
+- Font Author: Copyright (c) 2000-2022 by SIL International
+- Font Source: http://fonts.gstatic.com/s/abyssinicasil/v5/oY1H8ezOqK7iI3rK_45WKoc8J6UZBFOVAXuI.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

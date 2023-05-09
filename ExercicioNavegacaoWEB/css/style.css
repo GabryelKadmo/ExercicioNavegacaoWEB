@@ -1,0 +1,50 @@
+.tableList{
+  margin-top: 90px;
+}
+h4{
+  padding: 30px;
+  margin-top: 400px;
+}
+
+#contato{
+  position: relative;
+  margin-top: auto;
+}
+.cabeçalho-link {
+	display: flex;
+	gap: 1rem;
+}
+
+.cabeçalho-link a {
+	color: #111;
+	font-weight: 700;
+	transition: 0.3s;
+}
+
+.cabeçalho-link a:hover {
+	color: #c8815f;
+}
+
+.icon span {
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.icon span:hover {
+	color: #c8815f;
+}
+
+.Meio {
+	padding: 7rem 0 0 8.5rem;
+	line-height: 4rem;
+}
+
+.Meio h1 {
+	font-size: 4rem;
+
+}
+
+i {
+	padding: 2px;
+	margin-top: -2px;
+}

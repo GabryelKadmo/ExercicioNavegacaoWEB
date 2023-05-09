@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrinho</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a class="logoh1" href="index.html">Fashion blinders</a>
+        </div><!--logo-->
+
+        <div class="cabeçalho-link">
+            <li>
+                <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            </li>
+            <li>
+                <a href="destaques.html"><i class="fa-solid fa-trophy"></i>Destaque</a>
+            </li>
+            <li>
+                <a href="novidades.html"><i class="fa-solid fa-bell"></i>Novidades</a>
+            </li>
+            <li>
+                <a href="indignas.html"><i class="fa-solid fa-gem"></i>Acessórios</a>
+            </li>
+            <li>
+                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></i>Carrinho</a>
+            </li>
+        </div><!--cabeçalho-link-->
+        
+    </header>
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a id="nav-title" href="index.html" class="navbar-brand"> Fashion blinders</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="form-inline tableList">
+            <div class="form-group">
+                <input type="text" class="form-control" id="desc" placeholder="Descrição" value="" name="desc">
+            </div>
+            <div class="form-group">
+                <input type="number" class="form-control" id="amount" placeholder="Quantidade" value="" name="amount">
+            </div>
+            <div class="form-group">
+                <input type="number" size="10" class="form-control" id="value" placeholder="Valor" value=""
+                    name="value">
+            </div>
+
+            <span id="btnUpdate" style="display:none;">
+                <span id="inputIDUpdate"></span>
+                <button type="submit" onclick="updateData();" class="btn btn-info ">Salvar</button>
+                <button type="submit" onclick="resetForm();" class="btn btn-danger">Cancelar</button>
+            </span>
+            <span id="btnAdd">
+                <button type="button" onclick="addData();" class="btn btn-success" name="button">
+                    <i class="glyphicon glyphicon-plus"></i>Adicionar
+                </button>
+                <button onclick="resetForm();" type="button" class="btn btn-warning ">Reset</button>
+                <button onclick="deleteList();" type="button" class="btn btn-info ">Limpar carrinho</button>
+            </span>
+        </div>
+        <br>
+        <span class="alert alert-danger" id="errors" style="display:none;"> </span>
+
+        <table id="listTable" class="table">
+        </table>
+
+    </div>
+
+    <nav class="navbar navbar-default navbar-bottom" role="navigation">
+        <div class="container">
+            <h4 class="text-center text-success"> Total: <span id="totalValue">$ 0,00</span></h4>
+        </div>
+    </nav>
+
+    <section class="Contato" id="Contato">
+        <div class="meio-contato">
+            <h3>Fashion blinders</h3>
+            <h5>Envie um feedback</h5>
+            <div class="icons">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+
+        <div class="meio-contato">
+            <h3>Explore</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#new">Novo</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </div>
+
+        <div class="meio-contato">
+            <h3>Nossos serviços</h3>
+            <li><a href="#">Preço</a></li>
+            <li><a href="#">Free Shipping</a></li>
+            <li><a href="#">Cartões de presente</a></li>
+        </div>
+
+        <div class="meio-contato">
+            <h3>Shopping</h3>
+            <li><a href="#">Loja de roupas</a></li>
+            <li><a href="#">Tênis na moda</a></li>
+            <li><a href="#">Acessórios</a></li>
+            <li><a href="#">Venda</a></li>
+        </div>
+
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/config.js"> </script>
+    <script type="text/javascript" src="js/main.js"> </script>
+</body>
+
+</html>
