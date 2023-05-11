@@ -77,7 +77,7 @@ header {
 }
 
 .Meio {
-    padding: 7rem 0 0 8.5rem;
+    padding: 7rem 0 0 4.5rem;
     line-height: 4rem;
 }
 
@@ -108,7 +108,7 @@ section h1 {
 
 .cards img {
     width: 450px;
-    height: auto;
+    height: 420px;
     transition: 0.35s ease;
 
 }
@@ -167,12 +167,12 @@ section h1 {
 
 }
 
-.Container-roupas img:hover {
+/* .Container-roupas img:hover {
     transform: scale(0.9) translateY(-5px);
     cursor: pointer;
     transition: 0.3s;
 
-}
+} */
 
 .roupa img {
     width: 250px;
@@ -212,6 +212,7 @@ section h1 {
     color: #fff;
     font-size: 23px;
     margin-bottom: 1.6rem;
+
 }
 
 .meio-contato h5 {
@@ -222,6 +223,7 @@ section h1 {
 
 .meio-contato li {
     margin-bottom: 15px;
+
 }
 
 .meio-contato li a {
@@ -232,8 +234,8 @@ section h1 {
 }
 
 a {
-    color: #fff;
-    margin-left: 5px;
+    color: inherit;
+    text-decoration: none;
 }
 
 .logo a {
@@ -246,4 +248,46 @@ a {
 i {
     padding: 2px;
     margin-top: -2px;
+}
+
+#button {
+    color: #555;
+    border: none;
+    background: none;
+    font-size: 20px;
+    border: solid 1px #adadad;
+    border-radius: 7px;
+    width: 30px;
+}
+
+
+#btn {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #000
+}
+
+#bag {
+    font-size: 30px;
+    height: auto;
+    border: none;
+    margin-left: 300px;
+    margin-right: 50px;
+    background: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+#inputPesquisa {
+    width: 400px;
+    margin: 0px;
+}
+
+#title {
+    font-size: 40px;
+}
+p{
+    margin-left: 5px;
 }
