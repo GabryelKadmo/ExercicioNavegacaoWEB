@@ -47,7 +47,6 @@ header {
     padding: 14px 14%;
 }
 
-
 .logo {
     font-weight: 500;
     font-size: 1rem;
@@ -237,7 +236,7 @@ a {
     margin-left: 5px;
 }
 
-.logo a{
+.logo a {
     color: #333;
     font-size: 32px;
     font-weight: bold;

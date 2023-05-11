@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Carrinho</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de compras</title>
+    <link rel="stylesheet" href="cart.css" />
     <link rel="stylesheet" href="styles.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/5f1b3c3f23.js" crossorigin="anonymous"></script>
+    <script src="cart.js"></script>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a class="logoh1" href="index.html">Fashion blinders</a>
-        </div><!--logo-->
-
+			<button class="logoh1" href="index.html">Fashion blinders</button>
+		</div><!--logo-->
         <div class="cabeçalho-link">
+            <a class="logoh1" href="index.html">Fashion blinders</a>
             <li>
                 <a href="index.html"><i class="fa-solid fa-house"></i>Inicio</a>
             </li>
@@ -37,58 +44,109 @@
                 <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></i>Carrinho</a>
             </li>
         </div><!--cabeçalho-link-->
-        
+
     </header>
+    <div class="container bg-white rounded-top mt-5" id="zero-pad">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12 pt-3" id="carrinho">
+                <div class="d-flex">
+                    <div class="pt-1">
+                        <h4>Carrinho</h4>
+                    </div>
+                </div>
+                <div class="d-flex flex-column pt-4">
+                    <div class="font-weight-normal">3 items</div>
+                </div>
+                <div class="d-flex flex-row px-lg-5 mx-lg-5 mobile" id="heading">
+                    <div class="px-lg-5 mr-lg-5" id="produc">PRODUTO</div>
+                    <div class="px-lg-5 ml-lg-5" id="prc">PREÇO</div>
+                    <div class="px-lg-5 ml-lg-1" id="quantity">QUANTIDADE</div>
+                </div>
+                <div id="produto0"
+                    class="d-flex flex-row justify-content-between align-items-center pt-lg-4 pt-2 pb-3 border-bottom mobile">
+                    <div class="d-flex flex-row align-items-center">
+                        <div><img src="images/Untitled - 2.png" width="150" height="150" alt="" id="image"></div>
+                        <div class="d-flex flex-column pl-md-3 pl-1">
+                            <div>
+                                <h6>COTTON T-SHIRT</h6>
+                            </div>
+                            <div>Art.No:<span class="pl-2">091091001</span></div>
+                            <div>Color:<span class="pl-3">White</span></div>
+                            <div>Size:<span class="pl-4"> M</span></div>
+                        </div>
+                    </div>
+                    <div class="pl-md-0 pl-1"><b>R$50,00</b></div>
+                    <div class="pl-md-0 pl-2">
+                        <span class="fa fa-minus-square text-secondary" onclick="removerItem(0)"></span>
+                        <span class="px-md-3 px-1" id="quantidade0">0</span>
+                        <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(0)"></span>
+                    </div>
+                    <!-- <div class="pl-md-0 pl-1"><b>R$</b> <span id="total0"></span></div>
+                <div class="close">&times;</div> -->
+                </div>
+                <div id="produto1" class="d-flex flex-row justify-content-between align-items-center pt-4 pb-3 mobile">
+                    <div class="d-flex flex-row align-items-center">
+                        <div><img src="images/tren4.jpg" width="150" height="150" alt="" id="image"></div>
+                        <div class="d-flex flex-column pl-md-3 pl-1">
+                            <div>
+                                <h6>WHITE T-SHIRT</h6>
+                            </div>
+                            <div>Art.No:<span class="pl-2">056289891</span></div>
+                            <div>Color:<span class="pl-3">White</span></div>
+                            <div>Size:<span class="pl-4"> XL</span></div>
+                        </div>
+                    </div>
+                    <div class="pl-md-0 pl-1"><b>R$ 30,00</b></div>
+                    <div class="pl-md-0 pl-2">
+                        <span class="fa fa-minus-square text-secondary" onclick="removerItem(1)"></span>
+                        <span class="px-md-3 px-1" id="quantidade1">0</span>
+                        <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(1)"></span>
+                    </div>
+                    <!-- <div class="pl-md-0 pl-1"><b>R$</b> <span id="total1"></span></div>
+                <div class="close">&times;</div> -->
+                </div>
+                <div id="produto2" class="d-flex flex-row justify-content-between align-items-center pt-4 pb-3 mobile">
+                    <div class="d-flex flex-row align-items-center">
+                        <div><img src="images/tren3.jpg" width="150" height="150" alt="" id="image"></div>
+                        <div class="d-flex flex-column pl-md-3 pl-1">
+                            <div>
+                                <h6>KIT DE INVERNO</h6>
+                            </div>
+                            <div>Art.No:<span class="pl-2">056289892</span></div>
+                            <div>Color:<span class="pl-3">White</span></div>
+                            <div>Size:<span class="pl-4"> XL2</span></div>
+                        </div>
+                    </div>
+                    <div class="pl-md-0 pl-1"><b>R$ 99,90</b></div>
+                    <div class="pl-md-0 pl-2">
+                        <span class="fa fa-minus-square text-secondary" onclick="removerItem(2)"></span>
+                        <span class="px-md-3 px-1" id="quantidade2">0</span>
+                        <span class="fa fa-plus-square text-secondary" onclick="adicionarItem(2)"></span>
+                    </div>
 
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a id="nav-title" href="index.html" class="navbar-brand"> Fashion blinders</a>
+                </div>
             </div>
-
         </div>
-    </nav>
-
-    <div class="container-fluid">
-
-        <div class="form-inline tableList">
-            <div class="form-group">
-                <input type="text" class="form-control" id="desc" placeholder="Descrição" value="" name="desc">
-            </div>
-            <div class="form-group">
-                <input type="number" class="form-control" id="amount" placeholder="Quantidade" value="" name="amount">
-            </div>
-            <div class="form-group">
-                <input type="number" size="10" class="form-control" id="value" placeholder="Valor" value=""
-                    name="value">
-            </div>
-
-            <span id="btnUpdate" style="display:none;">
-                <span id="inputIDUpdate"></span>
-                <button type="submit" onclick="updateData();" class="btn btn-info ">Salvar</button>
-                <button type="submit" onclick="resetForm();" class="btn btn-danger">Cancelar</button>
-            </span>
-            <span id="btnAdd">
-                <button type="button" onclick="addData();" class="btn btn-success" name="button">
-                    <i class="glyphicon glyphicon-plus"></i>Adicionar
-                </button>
-                <button onclick="resetForm();" type="button" class="btn btn-warning ">Reset</button>
-                <button onclick="deleteList();" type="button" class="btn btn-info ">Limpar carrinho</button>
-            </span>
-        </div>
-        <br>
-        <span class="alert alert-danger" id="errors" style="display:none;"> </span>
-
-        <table id="listTable" class="table">
-        </table>
-
     </div>
+    <div class="container bg-light rounded-bottom py-4" id="zero-pad">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-10 col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <button class="btn btn-sm bg-light border border-dark">GO BACK</button>
+                    </div>
+                    <div class="px-md-0 px-1" id="footer-font">
+                        <b class="pl-md-4">Total R$:<span class="pl-md-4" id="valorTotalCompra"></span></b>
+                    </div>
+                    <div hidden class="px-lg-5 ml-lg-3" id="total"></div>
 
-    <nav class="navbar navbar-default navbar-bottom" role="navigation">
-        <div class="container">
-            <h4 class="text-center text-success"> Total: <span id="totalValue">$ 0,00</span></h4>
+                    <div>
+                        <button class="btn btn-sm bg-dark text-white px-lg-5 px-3">CONTINUE</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-
+    </div>
     <section class="Contato" id="Contato">
         <div class="meio-contato">
             <h3>Fashion blinders</h3>
@@ -124,13 +182,6 @@
         </div>
 
     </section>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/config.js"> </script>
-    <script type="text/javascript" src="js/main.js"> </script>
 </body>
 
 </html>

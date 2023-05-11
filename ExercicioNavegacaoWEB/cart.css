@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+body {
+    background-color: #eeeeee;
+}
+
+.footer-background {
+    background-color: rgb(204, 199, 199);
+}
+
+@media(max-width:9991px) {
+    #heading {
+        padding-left: 50px;
+    }
+
+    #prc {
+        margin-left: 70px;
+        padding-left: 110px;
+    }
+
+    #quantity {
+        padding-left: 48px;
+    }
+
+    #produc {
+        padding-left: 40px;
+    }
+
+    #total {
+        padding-left: 54px;
+    }
+}
+
+@media(max-width:767px) {
+    .mobile {
+        font-size: 10px;
+    }
+
+    h5 {
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 9px;
+    }
+
+    #mobile-font {
+        font-size: 11px;
+    }
+
+    #prc {
+        font-weight: 700;
+        margin-left: -45px;
+        padding-left: 105px;
+    }
+
+    #quantity {
+        font-weight: 700;
+        padding-left: 6px;
+    }
+
+    #produc {
+        font-weight: 700;
+        padding-left: 0px;
+    }
+
+    #total {
+        font-weight: 700;
+        padding-left: 9px;
+    }
+
+    #image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    #zero-pad {
+        padding: 2%;
+        margin-left: 10px;
+    }
+
+    #footer-font {
+        font-size: 12px;
+    }
+}
+
+.d-flex {
+    margin-top: 20px;
+}
+
+.col-lg-10 col-12 pt-3 {
+    margin-top: 220px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    position: fixed;
+    background: transparent;
+    transition: all .35s ease;
+    background-color: #fff;
+    padding: 14px 14%;
+}
+
+.logoh1 {
+    font-size: 30px;
+}
+
+.cabeçalho-link {
+    display: flex;
+    gap: 30px;
+    align-items: left;
+    text-decoration: none;
+}
+
+.cabeçalho-link a {
+    color: #111;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.cabeçalho-link a:hover {
+    color: #c8815f;
+}
+
+#icon span {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#icon span:hover {
+    color: #c8815f;
+}
+
+a {
+    color: #fff;
+    margin-left: 5px;
+}
+
+i {
+    padding: 2px;
+    margin-top: -2px;
+    text-decoration: none;
+}
+#prc{
+    margin-right: 250px;
+    margin-left: 600px;
+}
+
+#produc{
+    margin-left: 0px;
+}
+#quantity{
+    margin-left: 50px;
+}
